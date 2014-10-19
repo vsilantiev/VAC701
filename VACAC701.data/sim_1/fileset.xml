@@ -2,8 +2,10 @@
 <DARoots Version="1" Minor="30">
   <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
     <Filter Type="Srcs"/>
-    <File Path="C:/Users/vsilantiev/Documents/VACAC701new/MySim/tf64_pcie_trn.v">
+    <File Path="$PSRCDIR/sim_1/imports/MySim/tf64_pcie_trn.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/vsilantiev/Documents/VACAC701new/MySim/tf64_pcie_trn.v"/>
+        <Attr Name="ImportTime" Val="1413399967"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>

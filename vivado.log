@@ -2,8 +2,8 @@
 # Vivado v2013.3 (64-bit)
 # SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
 # IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
-# Start of session at: Sun Oct 19 22:00:26 2014
-# Process ID: 5788
+# Start of session at: Sun Oct 19 23:11:10 2014
+# Process ID: 3652
 # Log file: D:/Users/vsilantiev/Desktop/VACAC701/vivado.log
 # Journal file: D:/Users/vsilantiev/Desktop/VACAC701\vivado.jou
 #-----------------------------------------------------------
@@ -15,9 +15,34 @@ Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/
 start_gui
 open_project {D:\Users\vsilantiev\Desktop\VACAC701\VACAC701.xpr}
 INFO: [Project 1-313] Project file moved from 'D:/Users/vsilantiev/VACAC701' since last save.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/v6abb64Package_efifo_elink.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/v6abb64Package_efifo_elink.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/FF_tagram64x36.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/FF_tagram64x36.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/DMA_FSM.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/DMA_FSM.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/DMA_Calculate.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/DMA_Calculate.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/Tx_Output_Arbitor.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/Tx_Output_Arbitor.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/tx_Mem_Reader.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/tx_Mem_Reader.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_usDMA_Channel.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_usDMA_Channel.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_MWr_Channel.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_MWr_Channel.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_MRd_Channel.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_MRd_Channel.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_dsDMA_Channel.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_dsDMA_Channel.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_CplD_Channel.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_CplD_Channel.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/RxIn_Delays.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/RxIn_Delays.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/Interrupts.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/Interrupts.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/tx_Transact.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/tx_Transact.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/rx_Transact.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/rx_Transact.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/Registers.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/Registers.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/pcie_axi_trn_bridge.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/pcie_axi_trn_bridge.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/tlpControl.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/tlpControl.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/FIFO_Wrapper.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/FIFO_Wrapper.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/Emul.v: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/Emul.v'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sources_1/imports/VACAC701new/MySource/v6eb_pcie.vhd: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySource/v6eb_pcie.vhd'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/constrs_1/imports/VACAC701new/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf'.
+Import path for source D:/Users/vsilantiev/Desktop/VACAC701/VACAC701.srcs/sim_1/imports/MySim/tf64_pcie_trn.v: Could not find the file 'C:/Users/vsilantiev/Documents/VACAC701new/MySim/tf64_pcie_trn.v'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado repository 'C:/Xilinx/Vivado/2013.3/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 799.199 ; gain = 16.547
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 787.996 ; gain = 28.012
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 19 23:11:46 2014...

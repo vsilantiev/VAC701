@@ -2,8 +2,10 @@
 <DARoots Version="1" Minor="30">
   <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="C:/Users/vsilantiev/Documents/VACAC701new/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf">
+    <File Path="$PSRCDIR/constrs_1/imports/VACAC701new/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf">
       <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/vsilantiev/Documents/VACAC701new/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf"/>
+        <Attr Name="ImportTime" Val="1413663852"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

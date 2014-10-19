@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Sun Oct 19 23:06:43 2014
+# Process ID: 3412
+# Log file: D:/Users/vsilantiev/Desktop/VACAC701/vivado.log
+# Journal file: D:/Users/vsilantiev/Desktop/VACAC701\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\Users\vsilantiev\Desktop\VACAC701\VACAC701.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Users/vsilantiev/VACAC701' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository 'C:/Xilinx/Vivado/2013.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 811.121 ; gain = 63.707
+import_files
+INFO: [Designutils 20-334] All file(s) are already imported in fileset: 'v7_sfifo_15x128'
+INFO: [Designutils 20-334] All file(s) are already imported in fileset: 'v7_mBuf_128x72'
+INFO: [Designutils 20-334] All file(s) are already imported in fileset: 'v7_eb_fifo_counted_resized'
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 19 23:11:02 2014...

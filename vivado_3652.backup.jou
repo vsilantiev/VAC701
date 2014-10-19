@@ -2,10 +2,11 @@
 # Vivado v2013.3 (64-bit)
 # SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
 # IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
-# Start of session at: Sun Oct 19 23:11:10 2014
-# Process ID: 3652
+# Start of session at: Sun Oct 19 23:06:43 2014
+# Process ID: 3412
 # Log file: D:/Users/vsilantiev/Desktop/VACAC701/vivado.log
 # Journal file: D:/Users/vsilantiev/Desktop/VACAC701\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:\Users\vsilantiev\Desktop\VACAC701\VACAC701.xpr}
+import_files
