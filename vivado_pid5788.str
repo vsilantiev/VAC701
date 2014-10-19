@@ -1,0 +1,98 @@
+/*
+
+Vivado v2013.3 (64-bit)
+SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+Process ID: 5788
+
+Current time: 	10/19/14 10:00:36 PM
+Time zone: 	Moscow Standard Time (Europe/Moscow)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_17 64-bit
+Java home: 	C:/Xilinx/Vivado/2013.3/tps/win64/jre
+
+User name: 	vsilantiev
+User directory: D:/Users/vsilantiev/Desktop/VACAC701
+User country: 	RU
+User language: 	ru
+User locale: 	ru_RU
+
+GUI Allocated memory:	122 mb
+GUI Max memory:		3,066 mb
+Engine Allocated memory: 460 mb
+
+*/
+
+// TclEventType: START_GUI
+minimizeFrame (PAResourceItoP.PAViews_TCL_CONSOLE, "Tcl Console"); // af:DockableFrame (FrameContainer:JideTabbedPane, bR:JFrame)
+// TclEventType: START_PROGRESS_DIALOG
+// ca:I (bR:JFrame):  Opening project 'D:\Users\vsilantiev\Desktop\VACAC701\VACAC701.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Current time: 10/19/14 10:00:37 PM
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 38 mb (+37130kb) [00:00:09]
+// [Engine Memory]: 517 mb (+390597kb) [00:00:09]
+// [GUI Memory]: 67 mb (+31053kb) [00:00:09]
+// [Engine Memory]: 526 mb (+9359kb) [00:00:09]
+// [Engine Memory]: 527 mb (+1634kb) [00:00:09]
+// [Engine Memory]: 541 mb (+13844kb) [00:00:10]
+// [Engine Memory]: 545 mb (+4440kb) [00:00:10]
+// [Engine Memory]: 558 mb (+13807kb) [00:00:11]
+// [GUI Memory]: 68 mb (+785kb) [00:00:12]
+// [GUI Memory]: 73 mb (+4697kb) [00:00:12]
+// [GUI Memory]: 77 mb (+4697kb) [00:00:12]
+// [GUI Memory]: 82 mb (+4698kb) [00:00:12]
+// [GUI Memory]: 85 mb (+3799kb) [00:00:13]
+// [Engine Memory]: 558 mb (+172kb) [00:00:13]
+// Tcl Message: open_project {D:\Users\vsilantiev\Desktop\VACAC701\VACAC701.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Users/vsilantiev/VACAC701' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado repository 'C:/Xilinx/Vivado/2013.3/data/ip'. 
+// [Engine Memory]: 569 mb (+11264kb) [00:00:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 799.199 ; gain = 16.547 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 584 mb (+15515kb) [00:00:14]
+// Elapsed time: 11 seconds
+dismissDialog ("Opening project 'D:\\Users\\vsilantiev\\Desktop\\VACAC701\\VACAC701.xpr'"); // ca:I (bR:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 606 mb (+23547kb) [00:00:17]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 85 mb (+98kb) [00:00:17]
+// [Engine Memory]: 607 mb (+1327kb) [00:00:17]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 614 mb (+6938kb) [00:00:18]
+// [Engine Memory]: 616 mb (+2138kb) [00:00:20]
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v6pcieDMA - Behavioral (v6eb_pcie.vhd)]", 1); // n:f (u:JPanel, bR:JFrame)
+// [Engine Memory]: 619 mb (+2682kb) [00:00:22]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v6pcieDMA - Behavioral (v6eb_pcie.vhd), ad9467_1 - ADC_emul (Emul.v)]", 2); // n:f (u:JPanel, bR:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v6pcieDMA - Behavioral (v6eb_pcie.vhd), ad9467_1 - ADC_emul (Emul.v)]", 2, false, false, false, true, false); // n:f (u:JPanel, bR:JFrame) - POPUP TRIGGER
+// [Engine Memory]: 619 mb (+774kb) [00:00:24]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v6pcieDMA - Behavioral (v6eb_pcie.vhd), ad9467_1 - ADC_emul (Emul.v)]", 2); // n:f (u:JPanel, bR:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 89 mb (+4357kb) [00:00:30]
+// [GUI Memory]: 92 mb (+2473kb) [00:00:43]
+// [GUI Memory]: 93 mb (+1259kb) [00:00:55]
+// [GUI Memory]: 95 mb (+2273kb) [00:01:08]

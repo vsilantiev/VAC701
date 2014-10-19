@@ -1,0 +1,232 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.3 (win64) Build 329390 Wed Oct 16 18:37:02 MDT 2013
+| Date         : Sun Oct 19 21:45:20 2014
+| Host         : vvs running 64-bit Service Pack 1  (build 7601)
+| Command      : report_clock_utilization -file v6pcieDMA_clock_utilization_placed.rpt
+| Design       : v6pcieDMA
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X0Y2
+10. Net wise resources used in clock region X0Y3
+11. Net wise resources used in clock region X1Y3
+12. Net wise resources used in clock region X0Y4
+13. Net wise resources used in clock region X1Y4
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+------------+
+| Type  | Used | Available | Num Locked |
++-------+------+-----------+------------+
+| BUFG  |    4 |        32 |          0 |
+| BUFH  |    0 |       120 |          0 |
+| BUFIO |    0 |        40 |          0 |
+| MMCM  |    1 |        10 |          1 |
+| BUFR  |    0 |        40 |          0 |
+| BUFMR |    0 |        20 |          0 |
++-------+------+-----------+------------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------+--------+---------------+-----------+
+|       |                                                                                                              |                                                                                            |   Num Loads  |        |               |           |
++-------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+| Index | BUFG Cell                                                                                                    | Net Name                                                                                   | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+|     1 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/txoutclk_i.txoutclk_i    | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/refclk |    1 |     1 |     no |         1.565 |     0.078 |
+|     2 | delay_clk_IBUF_BUFG_inst                                                                                     | delay_clk_IBUF_BUFG                                                                        |   18 |    12 |     no |         1.854 |     1.854 |
+|     3 | ad9467_1/i_clk_gbuf                                                                                          | ad9467_1/B2H_wr_clk                                                                        |  213 |   102 |     no |         2.347 |     1.019 |
+|     4 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1     | 7508 |  2260 |     no |         1.966 |     0.638 |
++-------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+
+
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------+--------+---------------+-----------+
+|       |                                                                                            |                                                                                                |   Num Loads  |        |               |           |
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+| Index | MMCM Cell                                                                                  | Net Name                                                                                       | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+|     1 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_fb    |    1 |     1 |  yes   |         0.012 |     0.001 |
+|     2 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz |    1 |     1 |  yes   |         1.559 |     0.078 |
+|     3 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_250mhz |    1 |     1 |  yes   |         1.559 |     0.078 |
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------+-------+--------+---------------+-----------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+---------------------------------------------------+-------------------------------------------------+--------------+--------+---------------+-----------+
+|       |                                                   |                                                 |   Num Loads  |        |               |           |
++-------+---------------------------------------------------+-------------------------------------------------+------+-------+--------+---------------+-----------+
+| Index | Local Clk Src                                     | Net Name                                        | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+---------------------------------------------------+-------------------------------------------------+------+-------+--------+---------------+-----------+
+|     1 | theTlpControl/tx_Itf/trn_tsrc_rdy_derived_reg_i_1 | theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out |    1 |     1 |     no |         0.559 |     0.065 |
++-------+---------------------------------------------------+-------------------------------------------------+------+-------+--------+---------------+-----------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   21 | 21600 |    0 |  3200 |    0 |   120 |    0 |    30 |    0 |    60 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20000 |    0 |  3200 |    0 |    80 |    0 |    20 |    0 |    40 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 33600 |    0 |  5600 |    0 |   200 |    0 |    50 |    0 |   100 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  5600 |    0 |   160 |    0 |    40 |    0 |    80 |
+| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    8 | 28800 |    0 |  5600 |    0 |   200 |   15 |    50 |    0 |   100 |
+| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  5600 |    0 |   160 |    0 |    40 |    0 |    80 |
+| X0Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1941 | 28800 |  110 |  5600 |    0 |   200 |   39 |    50 |    0 |   100 |
+| X1Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    5 | 32000 |    0 |  5600 |    0 |   160 |    3 |    40 |    0 |    80 |
+| X0Y4              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    5 |     5 |    1 |     1 |    8 |    50 |    0 |    50 | 5307 | 20400 |  200 |  3000 |    0 |   100 |    9 |    25 |    0 |    60 |
+| X1Y4              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    2 | 20000 |    0 |  3200 |    0 |    80 |    0 |    20 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |                                                                         Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| BUFGCTRL    |   no   |         0 |         0 |       0 |       0 |  21 |     0 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1 |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+
+
+9. Net wise resources used in clock region X0Y2
+-----------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+--------------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |                                                                             Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+--------------------------------------------------------------------------------------------+
+| BUFG        |   no   |         0 |        15 |       0 |       0 |   0 |     0 |        0 |    0 | ad9467_1/B2H_wr_clk                                                                        |
+| BUFG        |   no   |         1 |         0 |       0 |       0 |   0 |     0 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/refclk |
+| BUFGCTRL    |   no   |         0 |        15 |       0 |       0 |   8 |     0 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1     |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+--------------------------------------------------------------------------------------------+
+
+
+10. Net wise resources used in clock region X0Y3
+------------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs |                                                                         Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+| BUFG        |   no   |         0 |        39 |       0 |       0 |  132 |    16 |        0 |    0 | ad9467_1/B2H_wr_clk                                                                    |
+| BUFGCTRL    |   no   |         0 |        39 |       0 |       0 | 1809 |    94 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1 |
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+
+
+11. Net wise resources used in clock region X1Y3
+------------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |                                                                         Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| BUFG        |   no   |         0 |         3 |       0 |       0 |   0 |     0 |        0 |    0 | ad9467_1/B2H_wr_clk                                                                    |
+| BUFGCTRL    |   no   |         0 |         3 |       0 |       0 |   5 |     0 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1 |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+
+
+12. Net wise resources used in clock region X0Y4
+------------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs |                                                                         Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+| BUFG        |   no   |         0 |         0 |       8 |       0 |    0 |     0 |        0 |    0 | ad9467_1/B2H_wr_clk                                                                    |
+| BUFG        |   no   |         0 |         0 |       0 |       0 |    9 |     0 |        0 |    0 | delay_clk_IBUF_BUFG                                                                    |
+| BUFGCTRL    |   no   |         0 |        18 |       0 |       0 | 5297 |   200 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1 |
++-------------+--------+-----------+-----------+---------+---------+------+-------+----------+------+----------------------------------------------------------------------------------------+
+
+
+13. Net wise resources used in clock region X1Y4
+------------------------------------------------
+
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| Source Type | Locked | MMCM Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |                                                                         Clock Net Name |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+| BUFGCTRL    |   no   |         0 |         0 |       0 |       0 |   2 |     0 |        0 |    0 | pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1 |
++-------------+--------+-----------+-----------+---------+---------+-----+-------+----------+------+----------------------------------------------------------------------------------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y18 [get_cells pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/txoutclk_i.txoutclk_i]
+set_property LOC BUFGCTRL_X0Y17 [get_cells delay_clk_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y16 [get_cells ad9467_1/i_clk_gbuf]
+set_property LOC BUFGCTRL_X0Y0 [get_cells pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+set_property LOC MMCME2_ADV_X0Y2 [get_cells pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i]
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y223 [get_ports adc_clk_in_n]
+set_property LOC IOB_X0Y224 [get_ports adc_clk_in_p]
+set_property LOC IOB_X0Y178 [get_ports delay_clk]
+
+# Clock net "ad9467_1/B2H_wr_clk" driven by instance "ad9467_1/i_clk_gbuf" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock CLKAG_ad9467_1/B2H_wr_clk
+add_cells_to_pblock [get_pblocks  CLKAG_ad9467_1/B2H_wr_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ad9467_1/B2H_wr_clk"}]]]
+resize_pblock [get_pblocks CLKAG_ad9467_1/B2H_wr_clk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "delay_clk_IBUF_BUFG" driven by instance "delay_clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y17"
+#startgroup
+create_pblock CLKAG_delay_clk_IBUF_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_delay_clk_IBUF_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="delay_clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_delay_clk_IBUF_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1" driven by instance "pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock CLKAG_pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1
+add_cells_to_pblock [get_pblocks  CLKAG_pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1"}]]]
+resize_pblock [get_pblocks CLKAG_pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/O1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out" driven by instance "theTlpControl/tx_Itf/trn_tsrc_rdy_derived_reg_i_1" located at site "SLICE_X31Y204"
+#startgroup
+create_pblock CLKAG_theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out
+add_cells_to_pblock [get_pblocks  CLKAG_theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out"}]]]
+resize_pblock [get_pblocks CLKAG_theTlpControl/tx_Itf/trn_tsrc_rdy_derived01_out] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup

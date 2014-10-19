@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Sun Oct 19 21:36:22 2014
+# Process ID: 8908
+# Log file: D:/Users/vsilantiev/VACAC701/VACAC701.runs/synth_1/v6pcieDMA.rds
+# Journal file: D:/Users/vsilantiev/VACAC701/VACAC701.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source v6pcieDMA.tcl

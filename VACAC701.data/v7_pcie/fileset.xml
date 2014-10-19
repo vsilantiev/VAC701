@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="v7_pcie" Type="BlockSrcs" RelSrcDir="$PSRCDIR/v7_pcie">
+    <Config>
+      <Option Name="TopModule" Val="v7_pcie"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+</DARoots>

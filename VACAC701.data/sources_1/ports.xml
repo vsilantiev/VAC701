@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="2">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="LEDs_IO_pin">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="adc_data_in_n">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="adc_data_in_p">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="pci_exp_rxn">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="pci_exp_rxp">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="pci_exp_txn">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="pci_exp_txp">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="adc_clk_in_n" Dir="IN"/>
+		<Port Id="adc_clk_in_p" Dir="IN"/>
+		<Port Id="adc_data_or_n" Dir="IN"/>
+		<Port Id="adc_data_or_p" Dir="IN"/>
+		<Port Id="delay_clk" Dir="IN"/>
+		<Port Id="real_soa_signal" Dir="OUT"/>
+		<Port Id="real_strobe_signal" Dir="OUT"/>
+		<Port Id="sys_clk_n" Dir="IN"/>
+		<Port Id="sys_clk_p" Dir="IN"/>
+		<Port Id="sys_reset_n" Dir="IN"/>
+		<Port Id="userclk_200MHz_n" Dir="IN"/>
+		<Port Id="userclk_200MHz_p" Dir="IN"/>
+		<Port Id="userclk_66MHz" Dir="IN"/>
+	</Ifc>
+</Interface>
+

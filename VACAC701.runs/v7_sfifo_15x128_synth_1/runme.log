@@ -1,0 +1,1677 @@
+
+*** Running vivado
+    with args -log v7_sfifo_15x128.rds -m64 -mode batch -messageDb vivado.pb -source v7_sfifo_15x128.tcl
+
+
+****** Vivado v2013.3 (64-bit)
+  **** SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+  **** IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source v7_sfifo_15x128.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a200tfbg676-2
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# read_ip d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository 'C:/Xilinx/Vivado/2013.3/data/ip'.
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir D:/Users/vsilantiev/VACAC701/VACAC701.data/wt [current_project]
+# set_property parent.project_dir D:/Users/vsilantiev/VACAC701 [current_project]
+# synth_design -top v7_sfifo_15x128 -part xc7a200tfbg676-2 -mode out_of_context
+Command: synth_design -top v7_sfifo_15x128 -part xc7a200tfbg676-2 -mode out_of_context
+
+Starting synthesis...
+
+INFO: [IP_Flow 19-2162] IP 'v7_sfifo_15x128' is locked. Locked reason: Property 'IS_LOCKED' is set to true by the system or user
+INFO: [Common 17-347] Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 247.371 ; gain = 78.383
+INFO: [Synth 8-638] synthesizing module 'v7_sfifo_15x128' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/synth/v7_sfifo_15x128.vhd:74]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 1 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v11_0' declared at 'd:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_v11_0.vhd:127' bound to instance 'U0' of component 'fifo_generator_v11_0' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/synth/v7_sfifo_15x128.vhd:518]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_v11_0.vhd:649]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 1 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:667]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 1 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_top.vhd:269]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:306]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:217]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_WR_RST_MAXFAN bound to: 2 - type: integer 
+	Parameter C_RD_RST_MAXFAN bound to: 3 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:223]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:224]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:226]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:227]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:229]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:230]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:534]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:535]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:536]
+INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo' (1#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'input_blk' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/input_blk.vhd:278]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_PKTFIFO_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'input_blk' (2#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/input_blk.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'memory' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_SMALLER_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shft_ram' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_ram.vhd:154]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shft_wrapper' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:156]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_IS_SRL32_NEEDED bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'srl16' to cell 'SRLC16E' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:223]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'shft_wrapper' (3#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_wrapper.vhd:156]
+INFO: [Synth 8-256] done synthesizing module 'shft_ram' (4#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/shft_ram.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'memory' (5#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'logic_sshft' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/logic_sshft.vhd:226]
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'updn_cntr' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_COUNTER_RESET_VAL bound to: 15 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'updn_cntr' (6#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'updn_cntr__parameterized0' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_COUNTER_RESET_VAL bound to: 0 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'updn_cntr__parameterized0' (6#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'updn_cntr__parameterized1' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_COUNTER_RESET_VAL bound to: 1 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'updn_cntr__parameterized1' (6#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'updn_cntr__parameterized2' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_COUNTER_RESET_VAL bound to: 2 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'updn_cntr__parameterized2' (6#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/updn_cntr.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'wr_status_flags_sshft' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/wr_status_flags_sshft.vhd:176]
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'compare' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/compare.vhd:138]
+	Parameter C_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'compare' (7#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/compare.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'wr_status_flags_sshft' (8#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/wr_status_flags_sshft.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'wr_pf_sshft' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/wr_pf_sshft.vhd:168]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 11 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wr_pf_sshft' (9#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/wr_pf_sshft.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'rd_status_flags_sshft' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_status_flags_sshft.vhd:171]
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rd_status_flags_sshft' (10#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_status_flags_sshft.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'rd_pe_sshft' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_pe_sshft.vhd:163]
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rd_pe_sshft' (11#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_pe_sshft.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'logic_sshft' (12#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/logic_sshft.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'output_blk' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/output_blk.vhd:268]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_PKTFIFO_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'output_blk' (13#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/common/output_blk.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo' (14#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (15#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_top.vhd:269]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0_synth' (16#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:667]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0' (17#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/fifo_generator_v11_0.vhd:649]
+INFO: [Synth 8-256] done synthesizing module 'v7_sfifo_15x128' (18#1) [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/synth/v7_sfifo_15x128.vhd:74]
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 298.668 ; gain = 129.680
+Start RTL Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 298.668 ; gain = 129.680
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.3/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.3/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Common 17-78] Attempting to get a license: Internal_bitstream
+WARNING: [Common 17-301] Failed to get a license: Internal_bitstream
+
+Processing XDC Constraints
+Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_ooc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc].
+Resolution: To avoid this warning, exclude constraints listed in [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc].
+Resolution: To avoid this warning, exclude constraints listed in [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc].
+Resolution: To avoid this warning, exclude constraints listed in [D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/.Xil/v7_sfifo_15x128_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Start RTL Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 530.262 ; gain = 361.273
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true. (constraint file  D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 530.262 ; gain = 361.273
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 530.262 ; gain = 361.273
+---------------------------------------------------------------------------------
+
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB8 0 RAMB16 0 RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 597.711 ; gain = 428.723
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	              128 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module v7_sfifo_15x128 
+Detailed RTL Component Info : 
+Module reset_blk_ramfifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module wr_pf_sshft 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module fifo_generator_v11_0 
+Detailed RTL Component Info : 
+Module output_blk 
+Detailed RTL Component Info : 
+Module updn_cntr__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module updn_cntr__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module updn_cntr__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module shft_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module input_blk 
+Detailed RTL Component Info : 
+Module shft_wrapper 
+Detailed RTL Component Info : 
+Module fifo_generator_top 
+Detailed RTL Component Info : 
+Module logic_sshft 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module fifo_generator_v11_0_synth 
+Detailed RTL Component Info : 
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module wr_status_flags_sshft 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rd_status_flags_sshft 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rd_pe_sshft 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module memory 
+Detailed RTL Component Info : 
+Module updn_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module fifo_generator_ramfifo 
+Detailed RTL Component Info : 
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_asreg_reg ) is unused and will be removed from module fifo_generator_v11_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_asreg_d1_reg ) is unused and will be removed from module fifo_generator_v11_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_asreg_d2_reg ) is unused and will be removed from module fifo_generator_v11_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_reg[1] ) is unused and will be removed from module fifo_generator_v11_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_reg[0] ) is unused and will be removed from module fifo_generator_v11_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_reg[2] ) is unused and will be removed from module fifo_generator_v11_0.
+INFO: [Synth 8-4471] merging register 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/gpe.rdpe/greg.ram_wr_en_i_reg' into 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/gpf.wrpf/greg.ram_wr_en_i_reg' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_pe_sshft.vhd:207]
+INFO: [Synth 8-4471] merging register 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/gpe.rdpe/greg.ram_rd_en_i_reg' into 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/gpf.wrpf/greg.ram_rd_en_i_reg' [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/fifo_generator_v11_0/ramfifo/rd_pe_sshft.vhd:206]
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_reg[2] ) is unused and will be removed from module fifo_generator_v11_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 597.711 ; gain = 428.723
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     3|
+|2     |LUT2    |     6|
+|3     |LUT4    |     9|
+|4     |LUT5    |     7|
+|5     |LUT6    |    12|
+|6     |SRLC16E |   128|
+|7     |FDCE    |   146|
+|8     |FDPE    |    17|
+|9     |FDRE    |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+---------------------------+------+
+|      |Instance                                 |Module                     |Cells |
++------+-----------------------------------------+---------------------------+------+
+|1     |top                                      |                           |   330|
+|2     |  U0                                     |fifo_generator_v11_0       |   330|
+|3     |    inst_fifo_gen                        |fifo_generator_v11_0_synth |   330|
+|4     |      \gconvfifo.rf                      |fifo_generator_top         |   330|
+|5     |        \grf.rf                          |fifo_generator_ramfifo     |   330|
+|6     |          \gntv_or_sync_fifo.mem         |memory                     |   256|
+|7     |            \gsm.sm                      |shft_ram                   |   256|
+|8     |              \gsm1.sm1                  |shft_wrapper               |   128|
+|9     |          rstblk                         |reset_blk_ramfifo          |    11|
+|10    |          \gntv_or_sync_fifo.gl1.lsshft  |logic_sshft                |    63|
+|11    |            rsts                         |rd_status_flags_sshft      |     5|
+|12    |            c0                           |updn_cntr__parameterized0  |    19|
+|13    |            \gpf.wrpf                    |wr_pf_sshft                |     9|
+|14    |            c1                           |updn_cntr__parameterized1  |    10|
+|15    |            wsts                         |wr_status_flags_sshft      |     5|
+|16    |            \gpe.rdpe                    |rd_pe_sshft                |     7|
+|17    |            crd                          |updn_cntr                  |     8|
++------+-----------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 629.285 ; gain = 460.297
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc] for cell 'U0'
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  SRLC16E => SRL16E: 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 959.289 ; gain = 754.691
+# rename_ref -prefix_all v7_sfifo_15x128
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+# write_checkpoint -noxdef v7_sfifo_15x128.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+# report_utilization -file v7_sfifo_15x128_utilization_synth.rpt -pb v7_sfifo_15x128_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 959.289 ; gain = 0.000
+# if { [catch {
+#   file copy -force D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/v7_sfifo_15x128.dcp d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128.dcp
+#   write_verilog -force -mode synth_stub d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_stub.v
+#   write_verilog -force -mode funcsim d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_funcsim.v
+#   write_vhdl -force -mode funcsim d:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "Critical Warning: Unable to successfully create or copy supporting IP files."
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 19 17:40:40 2014...

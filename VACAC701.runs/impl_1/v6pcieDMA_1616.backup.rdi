@@ -1,0 +1,624 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:37:02 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Sun Oct 19 21:41:09 2014
+# Process ID: 9604
+# Log file: D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/v6pcieDMA.rdi
+# Journal file: D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source v6pcieDMA.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/v7_sfifo_15x128.dcp' for cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/v7_sfifo_15x128.dcp' for cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_sfifo_15x128_synth_1/v7_sfifo_15x128.dcp' for cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_mBuf_128x72_synth_1/v7_mBuf_128x72.dcp' for cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Users/vsilantiev/VACAC701/VACAC701.runs/v7_eb_fifo_counted_resized_synth_1/v7_eb_fifo_counted_resized.dcp' for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.3
+Loading clock regions from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.3/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.3/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2013.3/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Common 17-78] Attempting to get a license: Internal_bitstream
+WARNING: [Common 17-301] Failed to get a license: Internal_bitstream
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer', returning the pins matched for query '[get_ports rst]' of cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc:53]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer', returning the pins matched for query '[get_ports rst]' of cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc:53]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer', returning the pins matched for query '[get_ports rst]' of cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_sfifo_15x128/v7_sfifo_15x128/v7_sfifo_15x128.xdc:53]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128_early.xdc] for cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_3/v7_mBuf_128x72_early.xdc] for cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer', returning the pins matched for query '[get_ports rst]' of cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_mBuf_128x72/v7_mBuf_128x72/v7_mBuf_128x72.xdc:56]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_3/v7_mBuf_128x72_early.xdc] for cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized_early.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+INFO: [Vivado 12-1399] There are no top level ports directly connected to pins of cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H', returning the pins matched for query '[get_ports rst]' of cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_eb_fifo_counted_resized/v7_eb_fifo_counted_resized/v7_eb_fifo_counted_resized.xdc:53]
+Resolution: The get_ports call is being converted to a get_pins call as there is no direct connection to a top level port. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized_early.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc]
+WARNING: [Vivado 12-180] No cells matched 'pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.pipe_common.qpll_wrapper_i/gtp_common.gtpe2_common_i'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:184]
+WARNING: [Vivado 12-507] No nets matched 'pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/userclk2'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:216]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option 'through'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:216]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+WARNING: [Constraints 18-402] set_false_path: 'pcie_axi_trn_bridge_i/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_block_i/PLPHYLNKUPN' is not a valid startpoint. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:235]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-513] set_false_path: list of objects specified for '-from' option contains no valid startpoints. Please check to make sure at least one valid startpoint is specified. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:235]
+WARNING: [Constraints 18-401] set_false_path: 'pcie_axi_trn_bridge_i/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_block_i/PLPHYLNKUPN' is not a valid endpoint. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:237]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-512] set_false_path: list of objects specified for '-to' option contains no valid endpoints. Please check to make sure at least one valid endpoint is specified. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:237]
+WARNING: [Constraints 18-402] set_false_path: 'pcie_axi_trn_bridge_i/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_block_i/PLRECEIVEDHOTRST' is not a valid startpoint. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:239]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-513] set_false_path: list of objects specified for '-from' option contains no valid startpoints. Please check to make sure at least one valid startpoint is specified. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:239]
+WARNING: [Constraints 18-401] set_false_path: 'pcie_axi_trn_bridge_i/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_block_i/PLRECEIVEDHOTRST' is not a valid endpoint. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:241]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-512] set_false_path: list of objects specified for '-to' option contains no valid endpoints. Please check to make sure at least one valid endpoint is specified. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:241]
+WARNING: [Constraints 18-402] set_false_path: 'pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/RST' is not a valid startpoint. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:244]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-513] set_false_path: list of objects specified for '-from' option contains no valid startpoints. Please check to make sure at least one valid startpoint is specified. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:244]
+WARNING: [Vivado 12-507] No nets matched 'pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/user_resetdone*'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:248]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option 'through'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:248]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:258]
+CRITICAL WARNING: [Coretcl 2-93] Port 'adc_data_or_p' already specified as part of a differential pair. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:530]
+CRITICAL WARNING: [Coretcl 2-93] Port 'adc_data_or_p' already specified as part of a differential pair. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:533]
+CRITICAL WARNING: [Coretcl 2-93] Port 'adc_data_or_p' already specified as part of a differential pair. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:534]
+WARNING: [Vivado 12-584] No ports matched 'userclk_200MHz_n'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:535]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:535]
+WARNING: [Vivado 12-584] No ports matched 'userclk_200MHz_p'. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:536]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc:536]
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/constrs_1/new/ac701.xdc]
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp/v6pcieDMA.xdc]
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp/v6pcieDMA.xdc]
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/Upstream_DMA_Engine/US_TLP_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/Downstream_DMA_Engine/DMA_DSP_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_2/v7_sfifo_15x128.xdc] for cell 'theTlpControl/rx_Itf/MRd_Channel/pioCplD_Buffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_3/v7_mBuf_128x72.xdc] for cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_3/v7_mBuf_128x72.xdc] for cell 'theTlpControl/tx_Itf/ABB_Tx_MBuffer'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized_late.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c. [D:/Users/vsilantiev/VACAC701/VACAC701.srcs/sources_1/ip/v7_eb_fifo_counted_resized/v7_eb_fifo_counted_resized/v7_eb_fifo_counted_resized_clocks.xdc:59]
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Finished Parsing XDC File [D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/.Xil/Vivado-9604-vvs/dcp_4/v7_eb_fifo_counted_resized_late.xdc] for cell 'LoopBack_FIFO_Off.queue_buffer0/U0_B2H'
+INFO: [Memdata 28-143] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 931.301 ; gain = 726.574
+Command: opt_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.445 . Memory (MB): peak = 931.301 ; gain = 0.000
+
+Starting Logic Optimization Task
+Logic Optimization | Checksum: 6d780b94
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 0e05b523
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 931.301 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 1684 cells.
+Phase 2 Constant Propagation | Checksum: 46c4e1b3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 931.301 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 5712 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2463 unconnected cells.
+Phase 3 Sweep | Checksum: a0cf0d6e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 931.301 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: a0cf0d6e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 931.301 ; gain = 0.000
+Implement Debug Cores | Checksum: 6d780b94
+
+Starting Power Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 57 BRAM(s) out of a total of 65 was updated to NO_CHANGE to save power.
+    Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 57 newly gated: 0 Total Ports: 130
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Ending Power Optimization Task | Checksum: 3f16f527
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.266 ; gain = 170.965
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 11 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1102.266 ; gain = 170.965
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Command: place_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.1 Mandatory Logic Optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 1.1 Mandatory Logic Optimization | Checksum: 1bfd05ccb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.757 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.2 Build Super Logic Region (SLR) Database
+Phase 1.2 Build Super Logic Region (SLR) Database | Checksum: 1bfd05ccb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.797 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.3 Add Constraints
+Phase 1.3 Add Constraints | Checksum: 1bfd05ccb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.4 Build Macros
+Phase 1.4 Build Macros | Checksum: ebecc54b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.5 Routing Based Site Exclusion
+Phase 1.5 Routing Based Site Exclusion | Checksum: ebecc54b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.6 Implementation Feasibility check
+WARNING: [Place 30-568] A LUT 'theTlpControl/tx_Itf/trn_tsrc_rdy_derived_reg_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	pcie_axi_trn_bridge_i/trn_tsrc_rdy_derived_reg {LDPE}
+Phase 1.6 Implementation Feasibility check | Checksum: ebecc54b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.7 Pre-Place Cells
+Phase 1.7 Pre-Place Cells | Checksum: ebecc54b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ebecc54b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.9 Build Placer Netlist Model
+
+Phase 1.9.1 Place Init Design
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Phase 1.9.1.1 Build Clock Data
+Phase 1.9.1.1 Build Clock Data | Checksum: 836a8be8
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 1.9.1 Place Init Design | Checksum: aa587f07
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 1.9 Build Placer Netlist Model | Checksum: aa587f07
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 1.10 Constrain Clocks/Macros
+
+Phase 1.10.1 Constrain Global/Regional Clocks
+Phase 1.10.1 Constrain Global/Regional Clocks | Checksum: 9bacde25
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 1.10 Constrain Clocks/Macros | Checksum: 9bacde25
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 9bacde25
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 85100df1
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:13 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 85100df1
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:14 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 74b84794
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:18 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: fffffffff64675ac
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:18 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3.4 Timing Path Optimizer
+Phase 3.4 Timing Path Optimizer | Checksum: a73f0b21
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:20 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3.5 Commit Small Macros & Core Logic
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: 673076a2
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:26 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 673076a2
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:26 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 673076a2
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:26 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Placement Timing Optimization
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Phase 4.1.1 Restore Best Placement
+Phase 4.1.1 Restore Best Placement | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 4.1 Post Placement Timing Optimization | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Congestion Reporting
+Phase 4.3.1 Congestion Reporting | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.3.2 Dump Critical Paths 
+Phase 4.3.2 Dump Critical Paths  | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.3.3 Restore STA
+Phase 4.3.3 Restore STA | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:51 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.3.4 Print Final WNS
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Place 30-100] Post Placement Timing Summary | WNS=0.038  | TNS=0.000  |
+
+Phase 4.3.4 Print Final WNS | Checksum: 1388522f2
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:55 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 81a0b36b
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:55 . Memory (MB): peak = 1102.266 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 11be7d6eb
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:55 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 11be7d6eb
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:55 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Ending Placer Task | Checksum: 153657fd6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:55 . Memory (MB): peak = 1102.266 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 12 Warnings, 20 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:27 ; elapsed = 00:02:56 . Memory (MB): peak = 1102.266 ; gain = 0.000
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0 secs 
+
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1102.266 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0 secs 
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1102.266 ; gain = 0.000
+Command: route_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+
+Phase 1.1 Build Netlist & NodeGraph (MT)
+Phase 1.1 Build Netlist & NodeGraph (MT) | Checksum: 1621120b8
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:07 . Memory (MB): peak = 1247.023 ; gain = 144.758
+Phase 1 Build RT Design | Checksum: e868e208
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:08 . Memory (MB): peak = 1247.023 ; gain = 144.758
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: e868e208
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:08 . Memory (MB): peak = 1247.023 ; gain = 144.758
+
+Phase 2.2 Restore Routing
+Phase 2.2 Restore Routing | Checksum: e868e208
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:08 . Memory (MB): peak = 1250.773 ; gain = 148.508
+
+Phase 2.3 Special Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Special Net Routing | Checksum: e9e53d79
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:09 . Memory (MB): peak = 1294.414 ; gain = 192.148
+
+Phase 2.4 Local Clock Net Routing
+Phase 2.4 Local Clock Net Routing | Checksum: 120c8eff7
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:09 . Memory (MB): peak = 1294.414 ; gain = 192.148
+
+Phase 2.5 Update Timing
+
+Phase 2.5.1 Update timing with NCN CRPR
+
+Phase 2.5.1.1 Hold Budgeting
+Phase 2.5.1.1 Hold Budgeting | Checksum: 120c8eff7
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:14 . Memory (MB): peak = 1300.383 ; gain = 198.117
+Phase 2.5.1 Update timing with NCN CRPR | Checksum: 120c8eff7
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:15 . Memory (MB): peak = 1300.383 ; gain = 198.117
+Phase 2.5 Update Timing | Checksum: 120c8eff7
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:15 . Memory (MB): peak = 1300.383 ; gain = 198.117
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.119  | TNS=0      | WHS=-1.27  | THS=-947   |
+
+
+Phase 2.6 Budgeting
+Phase 2.6 Budgeting | Checksum: 120c8eff7
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:17 . Memory (MB): peak = 1300.383 ; gain = 198.117
+Phase 2 Router Initialization | Checksum: a76c7243
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:17 . Memory (MB): peak = 1300.383 ; gain = 198.117
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 99a31311
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:39 . Memory (MB): peak = 1341.563 ; gain = 239.297
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+
+Phase 4.1.1 Remove Overlaps
+ Number of Nodes with overlaps = 1231
+ Number of Nodes with overlaps = 54
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+Phase 4.1.1 Remove Overlaps | Checksum: 13285ce16
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:53 . Memory (MB): peak = 1341.563 ; gain = 239.297
+
+Phase 4.1.2 Update Timing
+Phase 4.1.2 Update Timing | Checksum: 13285ce16
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:01:54 . Memory (MB): peak = 1341.563 ; gain = 239.297
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.118 | TNS=-0.536 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.3 collectNewHoldAndFix
+Phase 4.1.3 collectNewHoldAndFix | Checksum: e9572e6d
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:54 . Memory (MB): peak = 1341.563 ; gain = 239.297
+
+Phase 4.1.4 GlobIterForTiming
+
+Phase 4.1.4.1 Update Timing
+Phase 4.1.4.1 Update Timing | Checksum: 13b69ce2b
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:55 . Memory (MB): peak = 1341.563 ; gain = 239.297
+
+Phase 4.1.4.2 Fast Budgeting
+Phase 4.1.4.2 Fast Budgeting | Checksum: 13b69ce2b
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:55 . Memory (MB): peak = 1343.367 ; gain = 241.102
+Phase 4.1.4 GlobIterForTiming | Checksum: 95022b5c
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:02:00 . Memory (MB): peak = 1343.367 ; gain = 241.102
+Phase 4.1 Global Iteration 0 | Checksum: 95022b5c
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:02:00 . Memory (MB): peak = 1343.367 ; gain = 241.102
+
+Phase 4.2 Global Iteration 1
+
+Phase 4.2.1 Remove Overlaps
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.2.1 Remove Overlaps | Checksum: f093c38f
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:02:13 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Phase 4.2.2 Update Timing
+Phase 4.2.2 Update Timing | Checksum: f093c38f
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:02:13 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.378 | TNS=-0.383 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 18f5b1d24
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:02:14 . Memory (MB): peak = 1343.508 ; gain = 241.242
+Phase 4 Rip-up And Reroute | Checksum: 18f5b1d24
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:02:14 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 18f5b1d24
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:02:15 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.0903| TNS=-0.278 | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: 1c12260c4
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:15 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Full Hold Analysis
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c12260c4
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:02:17 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.0533| TNS=-0.0813| WHS=0.051  | THS=0      |
+
+Phase 6.1 Full Hold Analysis | Checksum: 1c12260c4
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:02:17 . Memory (MB): peak = 1343.508 ; gain = 241.242
+Phase 6 Post Hold Fix | Checksum: 1c12260c4
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:02:17 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Router Utilization Summary
+  Global Vertical Wire Utilization    = 1.97182 %
+  Global Horizontal Wire Utilization  = 1.83566 %
+  Total Num Pips                      = 200665
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 73.8739%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 1c12260c4
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:17 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: 1c0e9f9cb
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:19 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Phase 9 Post Router Timing
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-0.050 | TNS=-0.067 | WHS=0.053  | THS=0.000  |
+
+CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 9 Post Router Timing | Checksum: 1c0e9f9cb
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:02:23 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 1c0e9f9cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:23 . Memory (MB): peak = 1343.508 ; gain = 241.242
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:23 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 12 Warnings, 22 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:07 ; elapsed = 00:02:24 . Memory (MB): peak = 1343.508 ; gain = 241.242
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Users/vsilantiev/VACAC701/VACAC701.runs/impl_1/v6pcieDMA_drc_routed.rpt.
+Running Vector-less Activity Propagation...
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.508 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-249] Generated clock pcie_axi_trn_bridge_i/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz has no logical paths from master clock sys_clk_c.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1343.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 19 21:48:19 2014...
